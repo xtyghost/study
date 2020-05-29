@@ -1,7 +1,14 @@
 package com.example.study.study;
 
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+import com.example.study.study.alias.Command;
 
 @SpringBootApplication
 public class StudyApplication {
@@ -10,4 +17,14 @@ public class StudyApplication {
         SpringApplication.run(StudyApplication.class, args);
     }
 
+    @Autowired
+    private Map<String ,Command> commandMap;
+    @Bean
+    public CommandLineRunner commandLineRunner1(){
+    return args -> commandMap.forEach(
+        (k, v) -> {
+          System.out.println(k+"============="+v);
+          v.execute();
+        });
+    }
 }
