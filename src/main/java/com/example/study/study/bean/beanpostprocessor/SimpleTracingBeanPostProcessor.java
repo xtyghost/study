@@ -11,6 +11,7 @@ package com.example.study.study.bean.beanpostprocessor; /**
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
+import org.springframework.stereotype.Component;
 
 /**
  * 〈一句话功能简述〉<br> 
@@ -20,6 +21,7 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
  * @create 2020/5/29
  * @since 1.0.0
  */
+@Component
 public class SimpleTracingBeanPostProcessor implements BeanPostProcessor {
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {

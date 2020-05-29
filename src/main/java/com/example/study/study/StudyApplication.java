@@ -23,17 +23,17 @@ public class StudyApplication {
     SpringApplication.run(StudyApplication.class, args);
   }
 
-  @Bean
-  public CommandLineRunner commandLineRunner1() {
-    return args -> {
-      commandMap.forEach(
-          (k, v) -> {
-            System.out.println(k + "=============" + v);
-            v.execute();
-          });
-      commandImplC.command().execute();
-    };
-  }
+//  @Bean
+//  public CommandLineRunner commandLineRunner1() {
+//    return args -> {
+//      commandMap.forEach(
+//          (k, v) -> {
+//            System.out.println(k + "=============" + v);
+//            v.execute();
+//          });
+//      commandImplC.command().execute();
+//    };
+//  }
 
   @Bean
   public CommandLineRunner scopeCommandLineRunner() {

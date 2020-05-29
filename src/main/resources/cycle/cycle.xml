@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+
+         http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <!--   开启注解-->
+    <context:annotation-config/>
+    <!--    <context:component-scan >-->
+    <!-- an otherwise normal bean that will be injected by the Groovy-backed Messenger -->
+    <bean id="beanA" class="com.example.study.study.bean.beanlifecycle.BeanA" init-method="initXml"
+          destroy-method="destroyXml" factory-method="factoryMethod">
+        <property name="name" value="lisu"></property>
+        <property name="age" value="11"></property>
+        <property name="require" value="dfs"/>
+    </bean>
+    <!--
+    when the above bean (messenger) is instantiated, this custom
+    BeanPostProcessor implementation will output the fact to the system console
+    -->
+    <bean class="com.example.study.study.bean.beanpostprocessor.SimpleTracingBeanPostProcessor"/>
+    <!--    激活@require-->
+    <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean>
+
+    <bean class="org.springframework.beans.factory.config.PropertyOverrideConfigurer">
+        <property name="location" value="classpath:com/something/jdbc_replace.properties"/>
+        <property name="order" value="10"/>
+    </bean>
+    <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+        <property name="locations" value="classpath:com/something/jdbc.properties"/>
+    </bean>
+
+<!--    <bean class="com.example.study.study.bean.beanlifecycle.DbcpConfig"/>-->
+<!--    <bean class="com.example.study.study.bean.beanlifecycle.MyEnvironment"></bean>-->
+    <bean id="dataSource" destroy-method="close"
+          class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+   <bean class="com.example.study.study.bean.beanpostprocessor.SimpleTracingBeanFactoryPostProcessor"/>
+</beans>
