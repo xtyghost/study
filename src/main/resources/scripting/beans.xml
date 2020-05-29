@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:lang="http://www.springframework.org/schema/lang"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/lang
+        https://www.springframework.org/schema/lang/spring-lang.xsd">
+
+    <!-- this is the bean definition for the Groovy-backed Messenger implementation -->
+    <lang:groovy id="messenger" script-source="classpath:scripting/Messenger.groovy">
+        <lang:property name="message" value="I Can Do The Frug" />
+    </lang:groovy>
+
+    <!-- an otherwise normal bean that will be injected by the Groovy-backed Messenger -->
+    <bean id="bookingService" class="com.example.study.study.bean.beanpostprocessor.DefaultBookingService">
+        <property name="messenger" ref="messenger" />
+    </bean>
+    <!--
+    when the above bean (messenger) is instantiated, this custom
+    BeanPostProcessor implementation will output the fact to the system console
+    -->
+    <bean class="com.example.study.study.bean.beanpostprocessor.SimpleTracingBeanPostProcessor"/>
+
+</beans>

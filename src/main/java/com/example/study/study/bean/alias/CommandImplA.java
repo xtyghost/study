@@ -8,10 +8,7 @@
  * <author>          <time>          <version>          <desc>
  * 作者姓名           修改时间           版本号              描述
  */
-package com.example.study.study.alias;
-
-import org.springframework.core.annotation.AliasFor;
-import org.springframework.stereotype.Component;
+package com.example.study.study.bean.alias;
 
 /**
  * 〈一句话功能简述〉<br> 
