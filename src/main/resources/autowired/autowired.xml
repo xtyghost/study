@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+
+    <bean class="com.example.study.study.bean.autowired.MovieCatalogImplA">
+        <qualifier type="com.example.study.study.bean.autowired.Genre" value="A"/>
+        <!-- inject any dependencies required by this bean -->
+    </bean>
+
+    <bean class="com.example.study.study.bean.autowired.MovieCatalogImplB">
+        <qualifier type="com.example.study.study.bean.autowired.Genre" value="B"/>
+        <!-- inject any dependencies required by this bean -->
+    </bean>
+
+    <bean id="movieRecommender" class="com.example.study.study.bean.autowired.MovieRecommender"/>
+    <bean id="myConfiguration" class="com.example.study.study.bean.autowired.pattern.MyConfiguration"/>
+    <bean id="test" class="com.example.study.study.bean.autowired.pattern.Test"/>
+    <bean id="customAutowireConfigurer"
+          class="org.springframework.beans.factory.annotation.CustomAutowireConfigurer">
+        <property name="customQualifierTypes">
+            <set>
+                <value>com.example.study.study.bean.autowired.pattern.CustomQualifier</value>
+            </set>
+        </property>
+    </bean>
+    <bean name="A" class="com.example.study.study.bean.autowired.pattern.BooleanStore">
+        <meta key="format" value="A"/>
+        <!-- inject any dependencies required by this bean -->
+    </bean>
+
+</beans>
