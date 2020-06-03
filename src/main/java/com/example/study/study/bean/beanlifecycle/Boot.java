@@ -21,8 +21,13 @@ public class Boot {
     //
     ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("cycle/cycle.xml");
     context.registerShutdownHook(); // 确保触发destroy方法，在非web容器中
-    BeanA beanA = context.getBean("beanA", BeanA.class);
-    BasicDataSource bean = context.getBean(BasicDataSource.class);
+    try(BeanA beanA = context.getBean("beanA", BeanA.class);){
+
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+      BasicDataSource bean = context.getBean(BasicDataSource.class);
     System.out.println(bean.getPassword());
+
   }
 }

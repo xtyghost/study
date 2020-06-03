@@ -36,6 +36,10 @@ public class Test {
         A = a;
     }
 
+    /***
+     * 现根据名称（字段名，name属性），查询，
+     * 查不到，根据类型查询（根据类型查询原理和@autowired一致）
+     */
     @Resource
     private Store A;
 
