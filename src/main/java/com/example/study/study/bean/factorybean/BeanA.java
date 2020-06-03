@@ -31,4 +31,12 @@ public class BeanA {
     public void setAge(Integer age) {
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return "BeanA{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

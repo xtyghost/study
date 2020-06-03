@@ -34,7 +34,7 @@ public class Config {
     System.out.println(prototypeInstanceB2().getClass());
     return new TestBeanB("prototypeInstanceB for ");
   }
-
+     //禁用destroyMethod默认匹配
     @Bean(destroyMethod = "")
 //  @Scope("prototype")
     public TestBeanB prototypeInstanceB2() {
