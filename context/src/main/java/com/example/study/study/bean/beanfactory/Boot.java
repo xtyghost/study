@@ -22,7 +22,9 @@ public class Boot {
     factory.addBeanPostProcessor(new AutowiredAnnotationBeanPostProcessor());
     factory.addBeanPostProcessor(new MyBeanPostProcessor());
     factory.registerBeanDefinition("lisu", new RootBeanDefinition(Person.class));
-    Person bean = factory.getBean(Person.class);
-    System.out.println(bean);
+    // 默认延迟加载，preInstantiateSingletons()可以提前加载bean
+    factory.preInstantiateSingletons();
+//    Person bean = factory.getBean(Person.class);
+//    System.out.println(bean);
   }
 }

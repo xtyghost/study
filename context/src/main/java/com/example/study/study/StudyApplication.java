@@ -14,11 +14,11 @@ import com.example.study.study.bean.alias.CommandImplC;
 import com.example.study.study.bean.eventlistener.MyApplicationEvent;
 import com.example.study.study.bean.scope.SingletonA;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.example.study.study.bean.scope")
 public class StudyApplication {
 
-  @Autowired private Map<String, Command> commandMap;
-  @Autowired private CommandImplC commandImplC;
+//  @Autowired private Map<String, Command> commandMap;
+//  @Autowired private CommandImplC commandImplC;
   @Autowired private SingletonA singletonA;
   @Autowired private ApplicationEventPublisher eventPublisher;
 
@@ -26,31 +26,31 @@ public class StudyApplication {
     SpringApplication.run(StudyApplication.class, args);
   }
 
-  //  @Bean
-  //  public CommandLineRunner commandLineRunner1() {
-  //    return args -> {
-  //      commandMap.forEach(
-  //          (k, v) -> {
-  //            System.out.println(k + "=============" + v);
-  //            v.execute();
-  //          });
-  //      commandImplC.command().execute();
-  //    };
-  //  }
+//    @Bean
+//    public CommandLineRunner commandLineRunner1() {
+//      return args -> {
+//        commandMap.forEach(
+//            (k, v) -> {
+//              System.out.println(k + "=============" + v);
+//              v.execute();
+//            });
+//        commandImplC.command().execute();
+//      };
+//    }
 
-  //  @Bean
-  //  public CommandLineRunner scopeCommandLineRunner() {
-  //    return args -> {
-  //      singletonA.execute();
-  //      new Thread(() -> {
-  //             singletonA.execute();
-  //      }).start();
-  //    };
-  //  }
-  @Bean
-  public CommandLineRunner eventCommandLineRunner() {
-    return args -> {
-      eventPublisher.publishEvent(new MyApplicationEvent("lisu"));
-    };
-  }
+    @Bean
+    public CommandLineRunner scopeCommandLineRunner() {
+      return args -> {
+        singletonA.execute();
+        new Thread(() -> {
+               singletonA.execute();
+        }).start();
+      };
+    }
+//  @Bean
+//  public CommandLineRunner eventCommandLineRunner() {
+//    return args -> {
+//      eventPublisher.publishEvent(new MyApplicationEvent("lisu"));
+//    };
+//  }
 }

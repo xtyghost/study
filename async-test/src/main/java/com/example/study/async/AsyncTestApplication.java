@@ -1,4 +1,4 @@
-package com.example.study.async;
+package com.example.study.study.aspect;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableAsync;
 
-import com.example.study.async.eventlistener.MyApplicationEvent;
+import com.example.study.study.aspect.eventlistener.MyApplicationEvent;
 
 
 @EnableAsync

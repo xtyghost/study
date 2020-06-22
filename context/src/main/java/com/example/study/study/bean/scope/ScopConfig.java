@@ -21,9 +21,9 @@ import org.springframework.context.support.SimpleThreadScope;
 public class ScopConfig {
 
   @Bean
-  public CustomScopeConfigurer customScopeConfigurer() {
-    ThreadScopConfiguer threadScopConfiguer = new ThreadScopConfiguer();
-    threadScopConfiguer.addScope("thread", new SimpleThreadScope());
-    return threadScopConfiguer;
-  }
+    public CustomScopeConfigurer customScopeConfigurer() {
+        ThreadScopConfiguer threadScopConfiguer = new ThreadScopConfiguer();
+        threadScopConfiguer.addScope("thread", new SimpleThreadScope());
+        return threadScopConfiguer;
+    }
 }

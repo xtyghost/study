@@ -2,7 +2,7 @@
  * Copyright (C), 2015-2020, XXX有限公司 FileName: MyApplicationEvent Author: xutong Date: 2020/6/5 3:43
  * 下午 Description: History: <author> <time> <version> <desc> 作者姓名 修改时间 版本号 描述
  */
-package com.example.study.async.eventlistener;
+package com.example.study.study.aspect.eventlistener;
 
 import org.springframework.context.ApplicationEvent;
 import org.springframework.core.ResolvableType;

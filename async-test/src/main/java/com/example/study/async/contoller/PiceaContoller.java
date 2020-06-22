@@ -1,4 +1,4 @@
-package com.example.study.async.contoller;
+package com.example.study.study.aspect.contoller;
 
 import java.util.concurrent.Future;
 
@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.study.async.service.PiceaService;
+import com.example.study.study.aspect.service.PiceaService;
 
 /**
  * PiceaContoller
