@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <aop:config>
+
+        <aop:aspect id="concurrentOperationRetry" ref="concurrentOperationExecutor">
+
+            <aop:pointcut id="idempotentOperation"
+                          expression="execution(* com.example.study.async.service.impl.AspectServiceImpl.*(..)) and this(test)"/>
+
+            <aop:around
+                    pointcut-ref="idempotentOperation"
+                    method="doConcurrentOperation"/>
+
+        </aop:aspect>
+
+    </aop:config>
+
+<!--    <aop:config>-->
+
+<!--        <aop:pointcut id="businessService"-->
+<!--                      expression="execution(* com.example.study.async.service.impl.AspectServiceImpl.*(..))"/>-->
+
+<!--        <aop:advisor-->
+<!--                pointcut-ref="businessService"-->
+<!--                advice-ref="tx-advice"/>-->
+
+<!--    </aop:config>-->
+
+<!--    <tx:advice id="tx-advice">-->
+<!--        <tx:attributes>-->
+<!--            <tx:method name="*" propagation="REQUIRED"/>-->
+<!--        </tx:attributes>-->
+<!--    </tx:advice>-->
+
+    <bean id="concurrentOperationExecutor"
+          class="com.example.study.async.excutor.ConcurrentOperationExecutor">
+        <property name="maxRetries" value="3"/>
+        <property name="order" value="100"/>
+    </bean>
+</beans>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+    <!--   < context:annotation-config />：仅能够在已经在已经注册过的bean上面起作用。对于没有在spring容器中注册的bean，它并不能执行任何操作
+      激活处理器
+
+    AutowiredAnnotationBeanPostProcessor
+    CommonAnnotationBeanPostProcessor
+    PersistenceAnnotationBeanPostProcessor
+    RequiredAnnotationBeanPostProcessor
+    。-->
+
+
+    <!--   < context:component-scan base-package="XX.XX"/> ：除了具有上面的功能之外，还具有自动将带有@component,@service,@Repository等注解的对象注册到spring容器中的功能。-->
+    <!--    <context:annotation-config/>-->
+    <context:component-scan base-package="com.example.study.study.aop.configured"/>
+    <bean class="com.example.study.study.aop.configured.Person" name="person">
+        <property name="name" value="lisu"></property>
+        <property name="age" value="21"></property>
+    </bean>
+    <bean class="com.example.study.study.aop.configured.Command">
+    </bean>
+    <bean class="com.example.study.study.aop.configured.Account" name="account"
+          depends-on="annotationBeanConfigurerAspect">
+        <property name="person" ref="person"></property>
+    </bean>
+    <bean class="org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect" name="annotationBeanConfigurerAspect">
+    </bean>
+    <!--    // 开启 @Configurable功能  @EnableSpringConfigured-->
+    <context:spring-configured/>
+<!--    @EnableLoadTimeWeaving-->
+    <context:load-time-weaver/>
+</beans>
