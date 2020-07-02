@@ -9,7 +9,8 @@ import org.springframework.beans.factory.config.CustomScopeConfigurer;
 
 /**
  * 〈一句话功能简述〉<br>
- * 〈自定义声明式注册thread范围〉 bean的声明周期,singleton,prototype,request,session,application,websocket
+ * 〈自定义声明式注册thread范围〉 bean的声明周期,singleton,prototype
+ * ,request,session,application,websocket==需要注册RequestContextFilter或RequestContextListener
  * 还有未注册的thread;
  *
  * @author xutong

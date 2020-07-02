@@ -16,7 +16,7 @@
     。-->
 
 
-    <!--   < context:component-scan base-package="XX.XX"/> ：除了具有上面的功能之外，还具有自动将带有@component,@service,@Repository等注解的对象注册到spring容器中的功能。-->
+    <!--   < context:component-scan base-package="XX.XX"/> ：除了具有上面的功能之外，还具有自动将带有@component,@services,@Repository等注解的对象注册到spring容器中的功能。-->
     <!--    <context:annotation-config/>-->
     <context:component-scan base-package="com.example.study.study.aop.configured"/>
     <bean class="com.example.study.study.aop.configured.Person" name="person">

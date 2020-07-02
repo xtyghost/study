@@ -20,7 +20,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @Aspect
 //@EnableAspectJAutoProxy
 public class BeforeAdviceAspect {
-  @Pointcut(value = "execution(* com.example.study.study.aop.simpleaop.pojo.Pojo.foo(..))")
+  @Pointcut(value = "execution(* com.example.study.study.aop.proxy.simpleaop.pojo.Pojo.foo(..))")
   public void pointcut() {}
 
   @Before(value = "pointcut()")

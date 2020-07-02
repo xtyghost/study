@@ -17,19 +17,20 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class FactoryMethodComponent {
-    @Bean
-//    @Scope("prototype")
-    public TestBeanA prototypeInstanceA() {
+  @Bean
+  //    @Scope("prototype")
+  public TestBeanA prototypeInstanceA() {
     System.out.println("prototypeInstanceA++");
     System.out.println("+++++++++++++++++++++");
-    //直接调用不经过spring
+    // 直接调用不经过spring
     System.out.println(prototypeInstanceA2().getClass());
-        return new TestBeanA("prototypeInstanceA for ");
-    }
-    @Bean
-//    @Scope("prototype")
-    public TestBeanA prototypeInstanceA2() {
+    return new TestBeanA("prototypeInstanceA for ");
+  }
+
+  @Bean(destroyMethod = "destroy")
+  //    @Scope("prototype")
+  public TestBeanA prototypeInstanceA2() {
     System.out.println("prototypeInstanceA2+++");
-        return new TestBeanA("prototypeInstanceA for ");
-    }
+    return new TestBeanA("prototypeInstanceA for ");
+  }
 }

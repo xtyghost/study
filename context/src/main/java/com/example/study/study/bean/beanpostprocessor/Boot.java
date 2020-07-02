@@ -17,6 +17,8 @@ public final class Boot {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("scripting/beans.xml");
         Messenger messenger = ctx.getBean("messenger", Messenger.class);
         System.out.println(messenger);
+    System.out.println("messenger.getMessage() = " + messenger.getMessage());
+    System.out.println("messenger.getClass() = " + messenger.getClass());
     }
 
 }

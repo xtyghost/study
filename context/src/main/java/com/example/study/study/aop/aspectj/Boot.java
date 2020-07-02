@@ -6,8 +6,8 @@ package com.example.study.study.aop.aspectj;
 
 import org.springframework.aop.aspectj.annotation.AspectJProxyFactory;
 
-import com.example.study.study.aop.simpleaop.pojo.Pojo;
-import com.example.study.study.aop.simpleaop.pojo.SimplePojo;
+import com.example.study.study.aop.proxy.simpleaop.pojo.Pojo;
+import com.example.study.study.aop.proxy.simpleaop.pojo.SimplePojo;
 
 /**
  * 〈一句话功能简述〉<br>

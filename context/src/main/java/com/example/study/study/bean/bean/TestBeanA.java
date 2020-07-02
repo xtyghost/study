@@ -27,4 +27,7 @@ public class TestBeanA {
     System.out.println(name);
         this.name = name;
     }
+    public void destroy(){
+    System.out.println("TestBeanA.destroy().........");
+    }
 }

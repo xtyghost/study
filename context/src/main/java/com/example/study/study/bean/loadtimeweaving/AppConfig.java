@@ -29,11 +29,19 @@ public class AppConfig {
       return myLoadTimeBean;
   }
 
-    /***
-     * -javaagent:~/.m2/repository/org/springframework/spring-instrument/5.2.6.RELEASE/org.springframework.instrument-5.2.6.RELEASE.jar
-     * @return
-     * @throws Throwable
-     */
+  /**
+   * *
+   * -javaagent:~/.m2/repository/org/springframework/spring-instrument/5.2.6.RELEASE/org.springframework.instrument-5.2.6.RELEASE.jar
+   *
+   * <p>// Detect a LoadTimeWeaver and prepare for weaving, if found. if
+   * (beanFactory.containsBean(LOAD_TIME_WEAVER_BEAN_NAME)) { beanFactory.addBeanPostProcessor(new
+   * LoadTimeWeaverAwareProcessor(beanFactory)); // Set a temporary ClassLoader for type matching.
+   * beanFactory.setTempClassLoader(new
+   * ContextTypeMatchClassLoader(beanFactory.getBeanClassLoader())); }
+   *
+   * @return
+   * @throws Throwable
+   */
   @Bean
   public InstrumentationLoadTimeWeaver loadTimeWeaver() throws Throwable {
     InstrumentationLoadTimeWeaver loadTimeWeaver = new InstrumentationLoadTimeWeaver();

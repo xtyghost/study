@@ -9,12 +9,12 @@
 
     <context:annotation-config/>
 
-    <bean id="personTarget" class="com.example.study.study.aop.proxyfactorybean.PersonImpl">
+    <bean id="personTarget" class="com.example.study.study.aop.proxy.proxyfactorybean.PersonImpl">
         <property name="name" value="Tony"/>
         <property name="age" value="51"/>
     </bean>
 
-    <bean id="myAdvisor" class="com.example.study.study.aop.proxyfactorybean.MyAdvisor">
+    <bean id="myAdvisor" class="com.example.study.study.aop.proxy.proxyfactorybean.MyAdvice">
         <property name="someProperty" value="Custom string property value"/>
     </bean>
 
@@ -23,7 +23,7 @@
 
     <bean id="person"
           class="org.springframework.aop.framework.ProxyFactoryBean">
-        <property name="proxyInterfaces" value="com.example.study.study.aop.proxyfactorybean.Person"/>
+        <property name="proxyInterfaces" value="com.example.study.study.aop.proxy.proxyfactorybean.Person"/>
 
         <property name="target" ref="personTarget"/>
         <property name="interceptorNames">
@@ -33,5 +33,7 @@
             </list>
         </property>
     </bean>
+    <bean class="com.example.study.study.aop.proxy.proxyfactorybean.Config"/>
+    <bean class="com.example.study.study.bean.beanpostprocessor.SimpleTracingBeanPostProcessor"/>
 
 </beans>

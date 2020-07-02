@@ -21,5 +21,6 @@
     BeanPostProcessor implementation will output the fact to the system console
     -->
     <bean class="com.example.study.study.bean.beanpostprocessor.SimpleTracingBeanPostProcessor"/>
+    <bean class="com.example.study.study.bean.beanpostprocessor.ProxyBeanPostProcessor"/>
 
 </beans>

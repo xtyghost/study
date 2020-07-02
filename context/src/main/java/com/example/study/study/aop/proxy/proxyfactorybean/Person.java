@@ -1,4 +1,4 @@
-package com.example.study.study.aop.proxyfactorybean;
+package com.example.study.study.aop.proxy.proxyfactorybean;
 
 public interface Person {
     void sayAge();
