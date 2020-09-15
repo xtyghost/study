@@ -19,5 +19,7 @@ import org.springframework.aop.AfterReturningAdvice;
 public class XtyReturnAdvice implements AfterReturningAdvice {
   @Override
   public void afterReturning(Object returnValue, Method method, Object[] args, Object target)
-      throws Throwable {}
+      throws Throwable {
+    System.out.println("afterReturning"+method.getName());
+  }
 }

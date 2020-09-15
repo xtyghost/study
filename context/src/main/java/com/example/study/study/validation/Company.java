@@ -4,12 +4,6 @@
  */
 package com.example.study.study.validation;
 
-import javax.validation.Constraint;
-
-import org.springframework.validation.annotation.Validated;
-
-import com.example.study.study.validation.constrant.XtyConstraintValidator;
-
 /**
  * 〈一句话功能简述〉<br>
  * 〈〉

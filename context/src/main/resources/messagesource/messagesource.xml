@@ -18,7 +18,16 @@
             </list>
         </property>
     </bean>
-
+<!--    三选一个-->
+<!--    <bean id="staticMessageSource" class="org.springframework.context.support.StaticMessageSource">-->
+<!--        -->
+<!--    </bean>-->
+<!--    <bean id="reloadableResourceBundleMessageSource"-->
+<!--          class="org.springframework.context.support.ReloadableResourceBundleMessageSource">-->
+<!--        <property name="basenames">-->
+<!--            <list></list>-->
+<!--        </property>-->
+<!--    </bean>-->
     <!-- this MessageSource is being used in a web application -->
     <bean id="messageSource2" class="org.springframework.context.support.ResourceBundleMessageSource">
         <property name="basename" value="messagesource.exceptions"/>

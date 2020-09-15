@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * 〈一句话功能简述〉<br>
- * 〈〉
+ * 〈演示spring属性加载的方式〉
  *
  * @author xutong
  * @create 2020/5/29

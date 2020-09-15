@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator</OriginalElement>
+  <nodes>
+    <node x="740.5000000000001" y="0.0">java.lang.FunctionalInterface</node>
+    <node x="626.5000000000001" y="103.0">org.springframework.jdbc.support.SQLExceptionTranslator</node>
+    <node x="618.0000000000001" y="208.0">org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator</node>
+    <node x="1091.0" y="475.0">org.springframework.jdbc.support.SQLExceptionSubclassTranslator</node>
+    <node x="618.0000000000001" y="464.0">org.springframework.jdbc.support.SQLStateSQLExceptionTranslator</node>
+    <node x="0.0" y="399.0">org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.jdbc.support.SQLExceptionTranslator" target="java.lang.FunctionalInterface">
+      <point x="0.0" y="-27.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.SQLStateSQLExceptionTranslator" target="org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="70.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator" target="org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator">
+      <point x="0.0" y="-103.5" />
+      <point x="299.0" y="374.0" />
+      <point x="693.5000000000001" y="374.0" />
+      <point x="-151.0" y="70.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator" target="org.springframework.jdbc.support.SQLExceptionTranslator">
+      <point x="0.0" y="-70.5" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.SQLExceptionSubclassTranslator" target="org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator">
+      <point x="0.0" y="-27.5" />
+      <point x="1317.5" y="374.0" />
+      <point x="995.5000000000001" y="374.0" />
+      <point x="151.0" y="70.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6585677749360613" x="772.0" y="303.0" />
+  <SelectedNodes>
+    <node>org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

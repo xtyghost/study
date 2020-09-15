@@ -4,6 +4,7 @@
  */
 package com.example.study.study.aop.proxy.proxyfactorybean;
 
+import java.io.ObjectStreamClass;
 import java.lang.reflect.Method;
 
 import org.aspectj.lang.annotation.AfterReturning;
@@ -21,16 +22,19 @@ public class MyAdvice implements MethodBeforeAdvice {
   private String someProperty;
   private volatile int count;
 
-  public void setSomeProperty(String someProperty) {}
-  @AfterReturning
+  public void setSomeProperty(String someProperty) {
+      this.someProperty= someProperty;
+  }
   public void before(Method m, Object[] args, Object target) throws Throwable {
     synchronized (this) {
       ++count;
       System.out.println(count);
+      System.out.println(someProperty);
     }
   }
 
   public int getCount() {
     return count;
   }
+
 }

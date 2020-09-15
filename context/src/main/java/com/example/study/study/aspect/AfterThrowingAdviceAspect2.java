@@ -10,7 +10,6 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import com.example.study.study.aspect.entity.User;
-import com.example.study.study.aspect.exception.CarNotFindException;
 
 /**
  * 〈一句话功能简述〉<br>

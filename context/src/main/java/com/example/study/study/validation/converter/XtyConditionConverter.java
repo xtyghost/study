@@ -10,7 +10,6 @@
  */
 package com.example.study.study.validation.converter;
 
-import java.beans.Expression;
 import java.util.Set;
 
 import org.springframework.core.convert.TypeDescriptor;

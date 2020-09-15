@@ -23,17 +23,29 @@
 
     <bean id="person"
           class="org.springframework.aop.framework.ProxyFactoryBean">
-        <property name="proxyInterfaces" value="com.example.study.study.aop.proxy.proxyfactorybean.Person"/>
+        <property name="proxyInterfaces">
+            <list>
+                <value>com.example.study.study.aop.proxy.proxyfactorybean.Person</value>
+                <value>com.example.study.study.aop.proxy.proxyfactorybean.Teacher</value>
+            </list>
+        </property>
 
         <property name="target" ref="personTarget"/>
         <property name="interceptorNames">
             <list>
                 <value>myAdvisor</value>
                 <value>debugInterceptor</value>
+                <value>teacherIntercepter</value>
             </list>
         </property>
     </bean>
     <bean class="com.example.study.study.aop.proxy.proxyfactorybean.Config"/>
     <bean class="com.example.study.study.bean.beanpostprocessor.SimpleTracingBeanPostProcessor"/>
+    <bean id="teacherIntercepter" class="org.springframework.aop.support.DelegatingIntroductionInterceptor"
+          scope="prototype">
+        <constructor-arg>
+            <bean class="com.example.study.study.aop.proxy.proxyfactorybean.TeacherImpl"/>
+        </constructor-arg>
+    </bean>
 
 </beans>

@@ -12,11 +12,10 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 import cn.hutool.core.date.StopWatch;
-import cn.hutool.core.lang.UUID;
 
 /**
  * 〈一句话功能简述〉<br>
- * 〈〉
+ * 〈测试各种遍历的性能〉
  *
  * @author xutong
  * @create 2020/6/30

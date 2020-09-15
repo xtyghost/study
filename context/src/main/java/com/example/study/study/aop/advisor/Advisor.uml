@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.aop.IntroductionAdvisor</OriginalElement>
+  <nodes>
+    <node x="0.0" y="138.0">org.springframework.aop.PointcutAdvisor</node>
+    <node x="209.0" y="127.0">org.springframework.aop.IntroductionAdvisor</node>
+    <node x="44.75" y="0.0">org.springframework.aop.Advisor</node>
+    <node x="264.25" y="11.0">org.springframework.aop.IntroductionInfo</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.aop.IntroductionAdvisor" target="org.springframework.aop.Advisor">
+      <point x="-54.25" y="-38.5" />
+      <point x="263.25" y="102.0" />
+      <point x="194.0" y="102.0" />
+      <point x="49.75" y="38.5" />
+    </edge>
+    <edge source="org.springframework.aop.IntroductionAdvisor" target="org.springframework.aop.IntroductionInfo">
+      <point x="54.25" y="-38.5" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="org.springframework.aop.PointcutAdvisor" target="org.springframework.aop.Advisor">
+      <point x="0.0" y="-27.5" />
+      <point x="-49.75" y="38.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="240.0" y="102.0" />
+  <SelectedNodes>
+    <node>org.springframework.aop.IntroductionAdvisor</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

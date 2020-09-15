@@ -11,16 +11,13 @@
 package com.example.study.study.aop.proxy.autoproxy;
 
 import org.aopalliance.aop.Advice;
-import org.springframework.aop.Advisor;
-import org.springframework.aop.ClassFilter;
 import org.springframework.aop.Pointcut;
 import org.springframework.aop.support.AbstractPointcutAdvisor;
-import org.springframework.aop.support.DefaultIntroductionAdvisor;
 import org.springframework.aop.support.NameMatchMethodPointcut;
 
 /**
  * 〈一句话功能简述〉<br> 
- * 〈〉
+ * 〈spring中的aspect切面〉
  *
  * @author xutong
  * @create 2020/7/1

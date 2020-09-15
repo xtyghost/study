@@ -17,6 +17,11 @@
     <modules>
         <module>async-test</module>
         <module>context</module>
+        <module>springboot</module>
+        <module>test</module>
+        <module>mvc</module>
+        <module>vm</module>
+        <module>mybatis</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
@@ -73,14 +78,5 @@
             <version>2.0.1.Final</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

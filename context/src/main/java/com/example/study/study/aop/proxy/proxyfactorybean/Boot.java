@@ -22,5 +22,7 @@ public class Boot {
       Person person = (Person) ctx.getBean("person");
       person.sayAge();
       person.sayName();
+      Teacher teacher = (Teacher) ctx.getBean("person");
+      teacher.teach();
   }
 }

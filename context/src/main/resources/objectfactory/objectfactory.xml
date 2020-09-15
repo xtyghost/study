@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+
+         http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <!--   开启注解-->
+    <context:component-scan base-package="com.example.study.study.bean.objectfactory" annotation-config="true"
+                            scoped-proxy="targetClass"/>
+
+    <!--    <context:annotation-config/>-->
+    <!--
+    when the above bean (messenger) is instantiated, this custom
+    BeanPostProcessor implementation will output the fact to the system console
+    -->
+    <bean id="newsBean" class="com.example.study.study.bean.objectfactory.FXNewsBean" scope="prototype"/>
+    <bean id="newsBeanFactory" class="org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean">
+        <property name="targetBeanName" value="newsBean">
+        </property>
+    </bean>
+    <bean id="mockPersister" class="com.example.study.study.bean.objectfactory.MockNewsPersister">
+        <property name="newsBeanFactory" ref="newsBeanFactory"/>
+    </bean>
+</beans>

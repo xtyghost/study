@@ -21,6 +21,8 @@ public class Boot {
     ctx.refresh();
     CommandManager commandManager = ctx.getBean("commandManager", CommandManager.class);
       Command command = commandManager.createCommand();
+    System.out.println(command);
+    System.out.println(commandManager.createCommand());
       command.setState("sdfsf");
       command.execute();
   }

@@ -6,7 +6,6 @@ package com.example.study.study.aspect;
 
 import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.weaver.ast.Or;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 

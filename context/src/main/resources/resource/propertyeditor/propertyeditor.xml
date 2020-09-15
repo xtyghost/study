@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+
+         http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <!--   开启注解-->
+    <context:component-scan base-package="com.example.study.study.bean.objectfactory" annotation-config="true"
+                            scoped-proxy="targetClass"/>
+
+    <!--    <context:annotation-config/>-->
+    <!--
+    when the above bean (messenger) is instantiated, this custom
+    BeanPostProcessor implementation will output the fact to the system console
+    -->
+    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="propertyEditorRegistrars">
+            <list>
+                <ref bean="datePropertyEditorRegistrar"/>
+            </list>
+        </property>
+    </bean>
+    <bean id="datePropertyEditorRegistrar"
+          class="com.example.study.study.resource.propertyeditor.DatePropertyEditorRegistrar"/>
+    <bean id="datePropertyEditor" class="com.example.study.study.resource.propertyeditor.DatePropertyEditor">
+        <property name="datePattern" value="yyyy/MM/dd"/>
+    </bean>
+    <bean class="com.example.study.study.resource.propertyeditor.DateFoo">
+        <property name="date">
+            <value>2020/3/4</value>
+        </property>
+    </bean>
+</beans>

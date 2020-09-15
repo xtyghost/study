@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource</OriginalElement>
+  <nodes>
+    <node x="507.25" y="193.0">org.springframework.jdbc.core.namedparam.EmptySqlParameterSource</node>
+    <node x="0.0" y="419.0">org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource</node>
+    <node x="200.25000000000003" y="193.0">org.springframework.jdbc.core.namedparam.AbstractSqlParameterSource</node>
+    <node x="366.0" y="0.0">org.springframework.jdbc.core.namedparam.SqlParameterSource</node>
+    <node x="320.0" y="386.0">org.springframework.jdbc.core.namedparam.MapSqlParameterSource</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.jdbc.core.namedparam.AbstractSqlParameterSource" target="org.springframework.jdbc.core.namedparam.SqlParameterSource">
+      <point x="0.0" y="-71.5" />
+      <point x="343.75" y="168.0" />
+      <point x="426.0" y="168.0" />
+      <point x="-60.0" y="71.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.core.namedparam.EmptySqlParameterSource" target="org.springframework.jdbc.core.namedparam.SqlParameterSource">
+      <point x="0.0" y="-71.5" />
+      <point x="628.25" y="168.0" />
+      <point x="546.0" y="168.0" />
+      <point x="60.0" y="71.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource" target="org.springframework.jdbc.core.namedparam.AbstractSqlParameterSource">
+      <point x="0.0" y="-71.5" />
+      <point x="150.0" y="361.0" />
+      <point x="272.0" y="361.0" />
+      <point x="-71.75" y="71.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.core.namedparam.MapSqlParameterSource" target="org.springframework.jdbc.core.namedparam.AbstractSqlParameterSource">
+      <point x="0.0" y="-104.5" />
+      <point x="537.5" y="361.0" />
+      <point x="415.5" y="361.0" />
+      <point x="71.75" y="71.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="377.5" y="297.5" />
+  <SelectedNodes>
+    <node>org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -10,7 +10,6 @@
  */
 package com.example.study.study.aop.configured;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**

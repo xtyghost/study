@@ -4,13 +4,7 @@
  */
 package com.example.study.study.aop.proxy.autoproxy;
 
-import java.lang.reflect.Method;
-
-import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
-import org.aspectj.lang.annotation.AfterReturning;
-import org.springframework.aop.BeforeAdvice;
-import org.springframework.aop.IntroductionInfo;
 import org.springframework.aop.support.DelegatingIntroductionInterceptor;
 
 /**

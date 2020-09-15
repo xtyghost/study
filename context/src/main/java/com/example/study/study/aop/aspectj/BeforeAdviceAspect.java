@@ -7,7 +7,6 @@ package com.example.study.study.aop.aspectj;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 /**
  * 〈一句话功能简述〉<br>

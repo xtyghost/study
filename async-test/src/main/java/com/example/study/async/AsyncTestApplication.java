@@ -14,7 +14,7 @@ import com.example.study.async.service.AspectService;
 
 @EnableAsync
 @SpringBootApplication
-@ImportResource(locations = "aspect/aspect.xml")
+@ImportResource(locations = "classpath:aspect/aspect.xml")
 public class AsyncTestApplication {
 
   @Autowired private ApplicationEventPublisher eventPublisher;
@@ -31,10 +31,10 @@ public class AsyncTestApplication {
     SpringApplication.run(AsyncTestApplication.class, args);
   }
 
-  @Bean
-  public CommandLineRunner applicationRunner() {
-    return args -> {
-      aspectService.doTransactionThree();
-    };
-  }
+//  @Bean
+//  public CommandLineRunner applicationRunner() {
+//    return args -> {
+//      aspectService.doTransactionThree();
+//    };
+//  }
 }

@@ -9,8 +9,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.SimpleThreadScope;
 
-import com.sun.xml.internal.ws.client.RequestContext;
-
 /**
  * 〈一句话功能简述〉<br>
  * 〈〉

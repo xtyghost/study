@@ -4,11 +4,8 @@
  */
 package com.example.study.study.validation.constrant;
 
-import java.time.LocalDateTime;
 import java.util.Set;
-import java.util.concurrent.Executors;
 
-import javax.validation.Constraint;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 import javax.validation.ConstraintViolation;

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.aop.support.DelegatingIntroductionInterceptor</OriginalElement>
+  <nodes>
+    <node x="161.0" y="104.0">java.lang.FunctionalInterface</node>
+    <node x="196.12500000000006" y="539.0">org.springframework.aop.support.DelegatingIntroductionInterceptor</node>
+    <node x="602.875" y="313.0">org.springframework.aop.support.IntroductionInfoSupport</node>
+    <node x="599.125" y="528.0">org.springframework.aop.support.DelegatePerTargetObjectIntroductionInterceptor</node>
+    <node x="37.25" y="208.0">org.aopalliance.intercept.MethodInterceptor</node>
+    <node x="0.0" y="104.0">org.aopalliance.intercept.Interceptor</node>
+    <node x="217.12500000000006" y="369.0">org.springframework.aop.IntroductionInterceptor</node>
+    <node x="389.0" y="103.0">org.springframework.aop.DynamicIntroductionAdvice</node>
+    <node x="256.0" y="0.0">org.aopalliance.aop.Advice</node>
+    <node x="811.375" y="208.0">org.springframework.aop.IntroductionInfo</node>
+    <node x="642.375" y="209.0">java.io.Serializable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.aop.IntroductionInterceptor" target="org.springframework.aop.DynamicIntroductionAdvice">
+      <point x="60.5" y="-26.5" />
+      <point x="398.62500000000006" y="288.0" />
+      <point x="540.5" y="288.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="org.springframework.aop.IntroductionInterceptor" target="org.aopalliance.intercept.MethodInterceptor">
+      <point x="-60.5" y="-26.5" />
+      <point x="277.62500000000006" y="288.0" />
+      <point x="167.75" y="288.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="org.aopalliance.intercept.Interceptor" target="org.aopalliance.aop.Advice">
+      <point x="0.0" y="-26.5" />
+      <point x="70.5" y="78.0" />
+      <point x="280.75" y="78.0" />
+      <point x="-24.75" y="26.5" />
+    </edge>
+    <edge source="org.springframework.aop.support.IntroductionInfoSupport" target="java.io.Serializable">
+      <point x="-107.5" y="-82.5" />
+      <point x="710.375" y="288.0" />
+      <point x="716.875" y="288.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.aopalliance.intercept.MethodInterceptor" target="java.lang.FunctionalInterface">
+      <point x="65.25" y="-27.5" />
+      <point x="233.0" y="183.0" />
+      <point x="265.0" y="183.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.aop.DynamicIntroductionAdvice" target="org.aopalliance.aop.Advice">
+      <point x="0.0" y="-27.5" />
+      <point x="540.5" y="78.0" />
+      <point x="330.25" y="78.0" />
+      <point x="24.75" y="26.5" />
+    </edge>
+    <edge source="org.springframework.aop.support.DelegatingIntroductionInterceptor" target="org.springframework.aop.IntroductionInterceptor">
+      <point x="-81.5" y="-49.5" />
+      <point x="-60.5" y="26.5" />
+    </edge>
+    <edge source="org.springframework.aop.support.IntroductionInfoSupport" target="org.springframework.aop.IntroductionInfo">
+      <point x="107.5" y="-82.5" />
+      <point x="925.375" y="288.0" />
+      <point x="918.875" y="288.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="org.springframework.aop.support.DelegatePerTargetObjectIntroductionInterceptor" target="org.springframework.aop.support.IntroductionInfoSupport">
+      <point x="108.75" y="-60.5" />
+      <point x="107.5" y="82.5" />
+    </edge>
+    <edge source="org.springframework.aop.support.DelegatePerTargetObjectIntroductionInterceptor" target="org.springframework.aop.IntroductionInterceptor">
+      <point x="-108.75" y="-60.5" />
+      <point x="707.875" y="498.0" />
+      <point x="398.62500000000006" y="498.0" />
+      <point x="60.5" y="26.5" />
+    </edge>
+    <edge source="org.springframework.aop.support.DelegatingIntroductionInterceptor" target="org.springframework.aop.support.IntroductionInfoSupport">
+      <point x="81.5" y="-49.5" />
+      <point x="440.62500000000006" y="508.0" />
+      <point x="710.375" y="508.0" />
+      <point x="-107.5" y="82.5" />
+    </edge>
+    <edge source="org.aopalliance.intercept.MethodInterceptor" target="org.aopalliance.intercept.Interceptor">
+      <point x="-65.25" y="-27.5" />
+      <point x="102.5" y="183.0" />
+      <point x="70.5" y="183.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="517.5" y="324.5" />
+  <SelectedNodes>
+    <node>org.aopalliance.intercept.MethodInterceptor</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

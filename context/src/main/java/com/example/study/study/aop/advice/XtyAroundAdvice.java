@@ -18,6 +18,11 @@ import org.aopalliance.intercept.MethodInvocation;
 public class XtyAroundAdvice implements MethodInterceptor {
     @Override
     public Object invoke(MethodInvocation invocation) throws Throwable {
+        invocation.getMethod();
+        invocation.getArguments();
+        invocation.getThis();
+        invocation.getStaticPart();
+        invocation.getClass();
     return null;
     }
 }

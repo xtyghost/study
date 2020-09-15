@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.aop.aspectj.AspectJExpressionPointcut</OriginalElement>
+  <nodes>
+    <node x="840.25" y="103.0">java.lang.FunctionalInterface</node>
+    <node x="63.75" y="206.0">org.springframework.aop.support.AbstractExpressionPointcut</node>
+    <node x="873.75" y="206.0">org.springframework.aop.ClassFilter</node>
+    <node x="42.0" y="0.0">org.springframework.aop.Pointcut</node>
+    <node x="350.75" y="206.0">org.springframework.aop.IntroductionAwareMethodMatcher</node>
+    <node x="670.75" y="206.0">org.springframework.beans.factory.BeanFactoryAware</node>
+    <node x="0.0" y="103.0">org.springframework.aop.support.ExpressionPointcut</node>
+    <node x="717.25" y="103.0">org.springframework.beans.factory.Aware</node>
+    <node x="502.5" y="309.0">org.springframework.aop.aspectj.AspectJExpressionPointcut</node>
+    <node x="421.75" y="103.0">org.springframework.aop.MethodMatcher</node>
+    <node x="220.0" y="103.0">java.io.Serializable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.aop.support.AbstractExpressionPointcut" target="org.springframework.aop.support.ExpressionPointcut">
+      <point x="-66.75" y="-26.5" />
+      <point x="130.5" y="181.0" />
+      <point x="100.0" y="181.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.aop.IntroductionAwareMethodMatcher" target="org.springframework.aop.MethodMatcher">
+      <point x="0.0" y="-26.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.AspectJExpressionPointcut" target="org.springframework.aop.IntroductionAwareMethodMatcher">
+      <point x="-32.25" y="-26.5" />
+      <point x="599.25" y="279.0" />
+      <point x="500.75" y="279.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.aop.support.AbstractExpressionPointcut" target="java.io.Serializable">
+      <point x="66.75" y="-26.5" />
+      <point x="264.0" y="181.0" />
+      <point x="294.5" y="181.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.aop.ClassFilter" target="java.lang.FunctionalInterface">
+      <point x="0.0" y="-26.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.AspectJExpressionPointcut" target="org.springframework.aop.ClassFilter">
+      <point x="96.75" y="-26.5" />
+      <point x="728.25" y="289.0" />
+      <point x="944.25" y="289.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.AspectJExpressionPointcut" target="org.springframework.beans.factory.BeanFactoryAware">
+      <point x="32.25" y="-26.5" />
+      <point x="663.75" y="279.0" />
+      <point x="762.25" y="279.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.aop.support.ExpressionPointcut" target="org.springframework.aop.Pointcut">
+      <point x="0.0" y="-26.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.AspectJExpressionPointcut" target="org.springframework.aop.support.AbstractExpressionPointcut">
+      <point x="-96.75" y="-26.5" />
+      <point x="534.75" y="289.0" />
+      <point x="197.25" y="289.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.BeanFactoryAware" target="org.springframework.beans.factory.Aware">
+      <point x="0.0" y="-26.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9728718428437793" x="524.5" y="181.0" />
+  <SelectedNodes>
+    <node>org.springframework.aop.aspectj.AspectJExpressionPointcut</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

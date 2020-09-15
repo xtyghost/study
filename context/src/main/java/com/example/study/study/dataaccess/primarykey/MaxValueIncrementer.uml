@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.jdbc.support.incrementer.AbstractColumnMaxValueIncrementer</OriginalElement>
+  <nodes>
+    <node x="1711.6614583333335" y="329.0">org.springframework.jdbc.support.incrementer.HsqlSequenceMaxValueIncrementer</node>
+    <node x="2891.25" y="432.0">org.springframework.jdbc.support.incrementer.SqlServerMaxValueIncrementer</node>
+    <node x="1144.0" y="206.0">org.springframework.jdbc.support.incrementer.AbstractSequenceMaxValueIncrementer</node>
+    <node x="461.2864583333335" y="432.0">org.springframework.jdbc.support.incrementer.PostgreSQLSequenceMaxValueIncrementer</node>
+    <node x="2040.6614583333335" y="329.0">org.springframework.jdbc.support.incrementer.Db2MainframeMaxValueIncrementer</node>
+    <node x="2621.25" y="432.0">org.springframework.jdbc.support.incrementer.DerbyMaxValueIncrementer</node>
+    <node x="1003.0" y="329.0">java.lang.Deprecated</node>
+    <node x="1991.7942708333335" y="535.0">org.springframework.jdbc.support.incrementer.SybaseAnywhereMaxValueIncrementer</node>
+    <node x="3128.6614583333335" y="329.0">org.springframework.jdbc.support.incrementer.MySQLMaxValueIncrementer</node>
+    <node x="2025.7942708333335" y="432.0">org.springframework.jdbc.support.incrementer.SybaseMaxValueIncrementer</node>
+    <node x="0.0" y="329.0">org.springframework.jdbc.support.incrementer.H2SequenceMaxValueIncrementer</node>
+    <node x="1912.1875" y="0.0">org.springframework.beans.factory.InitializingBean</node>
+    <node x="941.6614583333334" y="432.0">org.springframework.jdbc.support.incrementer.DB2MainframeSequenceMaxValueIncrementer</node>
+    <node x="3195.25" y="432.0">org.springframework.jdbc.support.incrementer.HsqlMaxValueIncrementer</node>
+    <node x="2919.9114583333335" y="206.0">org.springframework.jdbc.support.incrementer.AbstractColumnMaxValueIncrementer</node>
+    <node x="312.0" y="329.0">org.springframework.jdbc.support.incrementer.PostgresSequenceMaxValueIncrementer</node>
+    <node x="1337.6614583333335" y="432.0">org.springframework.jdbc.support.incrementer.DB2SequenceMaxValueIncrementer</node>
+    <node x="674.0" y="329.0">org.springframework.jdbc.support.incrementer.HanaSequenceMaxValueIncrementer</node>
+    <node x="2369.6614583333335" y="329.0">org.springframework.jdbc.support.incrementer.OracleSequenceMaxValueIncrementer</node>
+    <node x="1954.9375" y="103.0">org.springframework.jdbc.support.incrementer.AbstractDataFieldMaxValueIncrementer</node>
+    <node x="2715.6614583333335" y="329.0">org.springframework.jdbc.support.incrementer.AbstractIdentityColumnMaxValueIncrementer</node>
+    <node x="2115.1875" y="0.0">org.springframework.jdbc.support.incrementer.DataFieldMaxValueIncrementer</node>
+    <node x="1433.6614583333335" y="329.0">org.springframework.jdbc.support.incrementer.Db2LuwMaxValueIncrementer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.jdbc.support.incrementer.AbstractColumnMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.AbstractDataFieldMaxValueIncrementer">
+      <point x="0.0" y="-26.5" />
+      <point x="3082.9114583333335" y="181.0" />
+      <point x="2218.1875" y="181.0" />
+      <point x="87.75" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.DB2MainframeSequenceMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.AbstractSequenceMaxValueIncrementer">
+      <point x="94.0" y="-26.5" />
+      <point x="1223.6614583333335" y="412.0" />
+      <point x="1167.9114583333335" y="412.0" />
+      <point x="1167.9114583333335" y="309.0" />
+      <point x="1293.625" y="309.0" />
+      <point x="-21.375" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.AbstractSequenceMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.AbstractDataFieldMaxValueIncrementer">
+      <point x="0.0" y="-26.5" />
+      <point x="1315.0" y="181.0" />
+      <point x="2042.6875" y="181.0" />
+      <point x="-87.75" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.AbstractIdentityColumnMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.AbstractColumnMaxValueIncrementer">
+      <point x="0.0" y="-26.5" />
+      <point x="2912.1614583333335" y="309.0" />
+      <point x="3001.4114583333335" y="309.0" />
+      <point x="-81.5" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.OracleSequenceMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.AbstractSequenceMaxValueIncrementer">
+      <point x="0.0" y="-26.5" />
+      <point x="2532.6614583333335" y="279.0" />
+      <point x="1464.625" y="279.0" />
+      <point x="149.625" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.PostgreSQLSequenceMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.PostgresSequenceMaxValueIncrementer">
+      <point x="-89.75" y="-26.5" />
+      <point x="551.0364583333335" y="412.0" />
+      <point x="483.0" y="412.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.MySQLMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.AbstractColumnMaxValueIncrementer">
+      <point x="0.0" y="-26.5" />
+      <point x="3253.6614583333335" y="309.0" />
+      <point x="3164.4114583333335" y="309.0" />
+      <point x="81.5" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.Db2MainframeMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.AbstractSequenceMaxValueIncrementer">
+      <point x="0.0" y="-26.5" />
+      <point x="2195.1614583333335" y="289.0" />
+      <point x="1421.875" y="289.0" />
+      <point x="106.875" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.HsqlMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.AbstractIdentityColumnMaxValueIncrementer">
+      <point x="0.0" y="-26.5" />
+      <point x="3316.25" y="412.0" />
+      <point x="3059.5364583333335" y="412.0" />
+      <point x="147.375" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.HanaSequenceMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.AbstractSequenceMaxValueIncrementer">
+      <point x="0.0" y="-26.5" />
+      <point x="828.5" y="299.0" />
+      <point x="1250.875" y="299.0" />
+      <point x="-64.125" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.H2SequenceMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.AbstractSequenceMaxValueIncrementer">
+      <point x="0.0" y="-26.5" />
+      <point x="146.0" y="279.0" />
+      <point x="1165.375" y="279.0" />
+      <point x="-149.625" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.PostgreSQLSequenceMaxValueIncrementer" target="java.lang.Deprecated">
+      <point x="89.75" y="-26.5" />
+      <point x="730.5364583333335" y="412.0" />
+      <point x="1025.0" y="412.0" />
+      <point x="-44.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.DB2SequenceMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.Db2LuwMaxValueIncrementer">
+      <point x="75.0" y="-26.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.SybaseMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.AbstractIdentityColumnMaxValueIncrementer">
+      <point x="0.0" y="-26.5" />
+      <point x="2154.7942708333335" y="402.0" />
+      <point x="2764.7864583333335" y="402.0" />
+      <point x="-147.375" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.PostgresSequenceMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.AbstractSequenceMaxValueIncrementer">
+      <point x="0.0" y="-26.5" />
+      <point x="483.0" y="289.0" />
+      <point x="1208.125" y="289.0" />
+      <point x="-106.875" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.DB2MainframeSequenceMaxValueIncrementer" target="java.lang.Deprecated">
+      <point x="-94.0" y="-26.5" />
+      <point x="1035.6614583333335" y="412.0" />
+      <point x="1069.0" y="412.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.SqlServerMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.AbstractIdentityColumnMaxValueIncrementer">
+      <point x="0.0" y="-26.5" />
+      <point x="3033.25" y="412.0" />
+      <point x="2961.2864583333335" y="412.0" />
+      <point x="49.125" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.DB2SequenceMaxValueIncrementer" target="java.lang.Deprecated">
+      <point x="-75.0" y="-26.5" />
+      <point x="1412.6614583333335" y="402.0" />
+      <point x="1113.0" y="402.0" />
+      <point x="44.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.DerbyMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.AbstractIdentityColumnMaxValueIncrementer">
+      <point x="0.0" y="-26.5" />
+      <point x="2746.25" y="412.0" />
+      <point x="2863.0364583333335" y="412.0" />
+      <point x="-49.125" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.AbstractDataFieldMaxValueIncrementer" target="org.springframework.beans.factory.InitializingBean">
+      <point x="-87.75" y="-26.5" />
+      <point x="2042.6875" y="78.0" />
+      <point x="2003.6875" y="78.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.HsqlSequenceMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.AbstractSequenceMaxValueIncrementer">
+      <point x="0.0" y="-26.5" />
+      <point x="1866.1614583333335" y="299.0" />
+      <point x="1379.125" y="299.0" />
+      <point x="64.125" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.SybaseAnywhereMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.SybaseMaxValueIncrementer">
+      <point x="0.0" y="-26.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.AbstractDataFieldMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.DataFieldMaxValueIncrementer">
+      <point x="87.75" y="-26.5" />
+      <point x="2218.1875" y="78.0" />
+      <point x="2257.1875" y="78.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.support.incrementer.Db2LuwMaxValueIncrementer" target="org.springframework.jdbc.support.incrementer.AbstractSequenceMaxValueIncrementer">
+      <point x="0.0" y="-26.5" />
+      <point x="1562.6614583333335" y="309.0" />
+      <point x="1336.375" y="309.0" />
+      <point x="21.375" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0662682466077258" x="1589.7973354057476" y="353.1232309596053" />
+  <SelectedNodes>
+    <node>org.springframework.jdbc.support.incrementer.AbstractColumnMaxValueIncrementer</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

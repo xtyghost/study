@@ -4,6 +4,7 @@
  */
 package com.example.study.study.bean.beandefinition;
 
+import org.junit.Assert;
 import org.springframework.beans.factory.groovy.GroovyBeanDefinitionReader;
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
 import org.springframework.context.support.GenericApplicationContext;
@@ -34,6 +35,9 @@ public class Boot {
     // 所有beandefinition都是单例
     AbstractBeanDefinition personDao =
         (AbstractBeanDefinition) context.getBeanDefinition("personDao");
+      AbstractBeanDefinition personDao2 =
+              (AbstractBeanDefinition) context.getBeanDefinition("personDao");
+    Assert.assertEquals(personDao,personDao2);
     //      PersonServiceImpl personService = new PersonServiceImpl();
     //      new BeanWrapperImpl(personService).setPropertyValues(personDao.getPropertyValues());
     //    System.out.println(personService);

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy</OriginalElement>
+  <nodes>
+    <node x="649.0" y="309.0">org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy</node>
+    <node x="0.0" y="309.0">org.springframework.jdbc.datasource.UserCredentialsDataSourceAdapter</node>
+    <node x="375.0" y="206.0">org.springframework.jdbc.datasource.DelegatingDataSource</node>
+    <node x="4.0" y="412.0">org.springframework.jdbc.datasource.IsolationLevelDataSourceAdapter</node>
+    <node x="435.75" y="0.0">java.sql.Wrapper</node>
+    <node x="562.75" y="0.0">javax.sql.CommonDataSource</node>
+    <node x="505.75" y="103.0">javax.sql.DataSource</node>
+    <node x="337.0" y="309.0">org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy</node>
+    <node x="302.75" y="103.0">org.springframework.beans.factory.InitializingBean</node>
+    <node x="25.0" y="515.0">org.springframework.jdbc.datasource.WebSphereDataSourceAdapter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.jdbc.datasource.WebSphereDataSourceAdapter" target="org.springframework.jdbc.datasource.IsolationLevelDataSourceAdapter">
+      <point x="0.0" y="-26.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy" target="org.springframework.jdbc.datasource.DelegatingDataSource">
+      <point x="0.0" y="-26.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.datasource.DelegatingDataSource" target="javax.sql.DataSource">
+      <point x="54.0" y="-26.5" />
+      <point x="537.0" y="181.0" />
+      <point x="571.75" y="181.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy" target="org.springframework.jdbc.datasource.DelegatingDataSource">
+      <point x="0.0" y="-26.5" />
+      <point x="803.5" y="284.0" />
+      <point x="555.0" y="284.0" />
+      <point x="72.0" y="26.5" />
+    </edge>
+    <edge source="javax.sql.DataSource" target="javax.sql.CommonDataSource">
+      <point x="33.0" y="-26.5" />
+      <point x="604.75" y="78.0" />
+      <point x="654.25" y="78.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.datasource.UserCredentialsDataSourceAdapter" target="org.springframework.jdbc.datasource.DelegatingDataSource">
+      <point x="0.0" y="-26.5" />
+      <point x="158.5" y="284.0" />
+      <point x="411.0" y="284.0" />
+      <point x="-72.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.datasource.DelegatingDataSource" target="org.springframework.beans.factory.InitializingBean">
+      <point x="-54.0" y="-26.5" />
+      <point x="429.0" y="181.0" />
+      <point x="394.25" y="181.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.jdbc.datasource.IsolationLevelDataSourceAdapter" target="org.springframework.jdbc.datasource.UserCredentialsDataSourceAdapter">
+      <point x="0.0" y="-26.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="javax.sql.DataSource" target="java.sql.Wrapper">
+      <point x="-33.0" y="-26.5" />
+      <point x="538.75" y="78.0" />
+      <point x="489.25" y="78.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9642857142857143" x="479.0" y="284.0" />
+  <SelectedNodes>
+    <node>org.springframework.jdbc.datasource.IsolationLevelDataSourceAdapter</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

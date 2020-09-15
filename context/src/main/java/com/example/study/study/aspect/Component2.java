@@ -6,7 +6,6 @@ package com.example.study.study.aspect;
 
 import com.example.study.study.aspect.entity.Car;
 import com.example.study.study.aspect.entity.User;
-import com.example.study.study.aspect.exception.CarNotFindException;
 
 /**
  * 〈一句话功能简述〉<br>
