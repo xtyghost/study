@@ -6,8 +6,8 @@
     <node x="780.0" y="103.0">org.springframework.core.Ordered</node>
     <node x="0.0" y="206.0">org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor</node>
     <node x="1202.6572916666669" y="0.0">org.springframework.beans.factory.Aware</node>
-    <node x="21.0" y="103.0">org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor</node>
     <node x="617.75" y="309.0">org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator</node>
+    <node x="21.0" y="103.0">org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor</node>
     <node x="738.0" y="412.0">org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator</node>
     <node x="379.0" y="0.0">java.io.Serializable</node>
     <node x="96.5" y="0.0">org.springframework.beans.factory.config.BeanPostProcessor</node>
@@ -84,14 +84,14 @@
       <point x="1277.6572916666669" y="78.0" />
       <point x="30.0" y="26.5" />
     </edge>
-    <edge source="org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor" target="org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor">
-      <point x="0.0" y="-26.5" />
-      <point x="0.0" y="26.5" />
-    </edge>
     <edge source="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator" target="org.springframework.beans.factory.BeanFactoryAware">
       <point x="83.33333333333337" y="-26.5" />
       <point x="826.0833333333334" y="284.0" />
       <point x="1243.5" y="284.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor" target="org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor">
+      <point x="0.0" y="-26.5" />
       <point x="0.0" y="26.5" />
     </edge>
     <edge source="org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor">
@@ -117,7 +117,7 @@
       <point x="0.0" y="26.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.6587823336826777" x="687.9821334673227" y="367.914475556088" />
+  <settings layout="Hierarchic Group" zoom="0.7943624059748043" x="756.5" y="283.99999999999994" />
   <SelectedNodes>
     <node>org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator</node>
   </SelectedNodes>

@@ -25,13 +25,13 @@ import org.springframework.stereotype.Component;
 public class SimpleTracingBeanPostProcessor implements BeanPostProcessor {
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-        System.out.println("Bean '" + beanName + "' before : " + bean.toString());
+        System.out.println("Bean '" + beanName + "' before :postProcessBeforeInitialization==== " + bean.toString());
         return bean;
     }
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-        System.out.println("Bean '" + beanName + "' created : " + bean.toString());
+        System.out.println("Bean '" + beanName + "' created :postProcessAfterInitialization==== " + bean.toString());
         return bean;
     }
 }

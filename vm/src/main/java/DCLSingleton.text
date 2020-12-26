@@ -1,0 +1,110 @@
+Classfile /Users/xutong/IdeaProjects/study/vm/src/main/java/DCLSingleton.class
+  Last modified 2020年10月26日; size 550 bytes
+  MD5 checksum 3dba1fc3df2eeb2dfdcb9d9766903243
+  Compiled from "DCLSingleton.java"
+public class DCLSingleton
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #3                          // DCLSingleton
+  super_class: #6                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 3, attributes: 1
+Constant pool:
+   #1 = Methodref          #6.#21         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #3.#22         // DCLSingleton.singleton:LDCLSingleton;
+   #3 = Class              #23            // DCLSingleton
+   #4 = Methodref          #3.#21         // DCLSingleton."<init>":()V
+   #5 = Methodref          #3.#24         // DCLSingleton.getSingleton:()LDCLSingleton;
+   #6 = Class              #25            // java/lang/Object
+   #7 = Utf8               singleton
+   #8 = Utf8               LDCLSingleton;
+   #9 = Utf8               <init>
+  #10 = Utf8               ()V
+  #11 = Utf8               Code
+  #12 = Utf8               LineNumberTable
+  #13 = Utf8               getSingleton
+  #14 = Utf8               ()LDCLSingleton;
+  #15 = Utf8               StackMapTable
+  #16 = Class              #26            // java/lang/Throwable
+  #17 = Utf8               main
+  #18 = Utf8               ([Ljava/lang/String;)V
+  #19 = Utf8               SourceFile
+  #20 = Utf8               DCLSingleton.java
+  #21 = NameAndType        #9:#10         // "<init>":()V
+  #22 = NameAndType        #7:#8          // singleton:LDCLSingleton;
+  #23 = Utf8               DCLSingleton
+  #24 = NameAndType        #13:#14        // getSingleton:()LDCLSingleton;
+  #25 = Utf8               java/lang/Object
+  #26 = Utf8               java/lang/Throwable
+{
+  public DCLSingleton();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 14: 0
+
+  public static DCLSingleton getSingleton();
+    descriptor: ()LDCLSingleton;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=0
+         0: getstatic     #2                  // Field singleton:LDCLSingleton;
+         3: ifnonnull     37
+         6: ldc           #3                  // class DCLSingleton
+         8: dup
+         9: astore_0
+        10: monitorenter
+        11: getstatic     #2                  // Field singleton:LDCLSingleton;
+        14: ifnonnull     27
+        17: new           #3                  // class DCLSingleton
+        20: dup
+        21: invokespecial #4                  // Method "<init>":()V
+        24: putstatic     #2                  // Field singleton:LDCLSingleton;
+        27: aload_0
+        28: monitorexit
+        29: goto          37
+        32: astore_1
+        33: aload_0
+        34: monitorexit
+        35: aload_1
+        36: athrow
+        37: getstatic     #2                  // Field singleton:LDCLSingleton;
+        40: areturn
+      Exception table:
+         from    to  target type
+            11    29    32   any
+            32    35    32   any
+      LineNumberTable:
+        line 18: 0
+        line 19: 6
+        line 20: 11
+        line 21: 17
+        line 23: 27
+        line 25: 37
+      StackMapTable: number_of_entries = 3
+        frame_type = 252 /* append */
+          offset_delta = 27
+          locals = [ class java/lang/Object ]
+        frame_type = 68 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Throwable ]
+        frame_type = 250 /* chop */
+          offset_delta = 4
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: invokestatic  #5                  // Method getSingleton:()LDCLSingleton;
+         3: pop
+         4: return
+      LineNumberTable:
+        line 29: 0
+        line 30: 4
+}
+SourceFile: "DCLSingleton.java"

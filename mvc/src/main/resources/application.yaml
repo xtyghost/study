@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: plm-talk
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://www.hzingsys.com:68/plm_v1?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 1q!1q!
+    type: com.zaxxer.hikari.HikariDataSource
+  jpa:
+    show-sql: true
+  jooq:
+    sql-dialect: mysql

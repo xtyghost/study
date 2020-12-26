@@ -31,7 +31,7 @@ public class AppConfig {
 
   /**
    * *
-   * -javaagent:~/.m2/repository/org/springframework/spring-instrument/5.2.6.RELEASE/org.springframework.instrument-5.2.6.RELEASE.jar
+   * -javaagent:/Users/xutong/.m2/repository/org/springframework/spring-instrument/5.2.6.RELEASE/spring-instrument-5.2.6.RELEASE.jar
    *
    * <p>// Detect a LoadTimeWeaver and prepare for weaving, if found. if
    * (beanFactory.containsBean(LOAD_TIME_WEAVER_BEAN_NAME)) { beanFactory.addBeanPostProcessor(new

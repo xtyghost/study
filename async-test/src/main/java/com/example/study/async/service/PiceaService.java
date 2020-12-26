@@ -1,4 +1,4 @@
-package com.example.study.study.aspect.service;
+package com.example.study.async.service;
 
 import java.util.concurrent.Future;
 

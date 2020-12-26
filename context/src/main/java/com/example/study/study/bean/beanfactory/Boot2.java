@@ -11,7 +11,7 @@ import org.springframework.core.io.FileSystemResource;
 
 /**
  * 〈一句话功能简述〉<br>
- * 〈〉
+ * 〈PropertySourcesPlaceholderConfigurer属性设置使用〉
  *
  * @author xutong
  * @create 2020/6/9

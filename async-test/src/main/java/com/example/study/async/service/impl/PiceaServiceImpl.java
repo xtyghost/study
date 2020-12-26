@@ -1,4 +1,4 @@
-package com.example.study.study.aspect.service.impl;
+package com.example.study.async.service.impl;
 
 import java.util.concurrent.Future;
 
@@ -6,7 +6,8 @@ import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.stereotype.Service;
 
-import com.example.study.study.aspect.service.PiceaService;
+import com.example.study.async.service.PiceaService;
+
 
 /**
  * PiceaServiceImpl

@@ -6,6 +6,7 @@ package com.example.study.mvc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.scheduling.annotation.EnableAsync;
 
 /**
@@ -18,6 +19,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
  */
 @EnableAsync
 @SpringBootApplication
+@EntityScan("com.example.study.mvc.entity")
 public class MvcApplication {
   public static void main(String[] args) {
     SpringApplication.run(MvcApplication.class, args);

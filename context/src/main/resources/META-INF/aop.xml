@@ -3,11 +3,11 @@
 
     <weaver>
         <!-- only weave classes in our application-specific packages -->
-        <include within="com.example.study.study.aop.ltw.StubEntitlementCalculationService.*"/>
+        <include within="com.example.study.study.bean.loadtimeweaving.xml.*"/>
     </weaver>
 
     <aspects>
         <!-- weave in just this aspect -->
-        <aspect name="com.example.study.study.aop.ltw.ProfilingAspect"/>
+        <aspect name="com.example.study.study.bean.loadtimeweaving.xml.ProfileAspect"/>
     </aspects>
 </aspectj>

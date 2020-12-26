@@ -65,7 +65,7 @@
       <point x="0.0" y="26.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.9642857142857143" x="479.0" y="284.0" />
+  <settings layout="Hierarchic Group" zoom="0.869047619047619" x="479.0" y="284.00000000000006" />
   <SelectedNodes>
     <node>org.springframework.jdbc.datasource.IsolationLevelDataSourceAdapter</node>
   </SelectedNodes>

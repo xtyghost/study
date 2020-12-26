@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.context.request.RequestContextListener;
 import org.springframework.web.filter.RequestContextFilter;
 
+import com.example.study.async.initializingbean.XtyInitializingBean;
+
 /**
  * 〈一句话功能简述〉<br>
  * 〈〉
@@ -32,5 +34,10 @@ public class CommenConfiguration {
   @Bean
   public RequestContextFilter requestContextFilter() {
     return new RequestContextFilter();
+  }
+
+  @Bean
+  public XtyInitializingBean xtyInitialBean() {
+    return new XtyInitializingBean();
   }
 }

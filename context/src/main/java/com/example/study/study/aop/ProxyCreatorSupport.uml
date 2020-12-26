@@ -7,8 +7,8 @@
     <node x="606.6826923076924" y="309.0">org.springframework.aop.framework.ProxyCreatorSupport</node>
     <node x="591.9150641025642" y="103.0">org.springframework.aop.framework.Advised</node>
     <node x="133.7019230769231" y="206.0">org.springframework.beans.factory.Aware</node>
-    <node x="756.9150641025642" y="0.0">java.io.Serializable</node>
     <node x="600.0" y="412.0">org.springframework.aop.aspectj.annotation.AspectJProxyFactory</node>
+    <node x="756.9150641025642" y="0.0">java.io.Serializable</node>
     <node x="760.9150641025642" y="103.0">org.springframework.aop.framework.ProxyConfig</node>
     <node x="553.9150641025642" y="0.0">org.springframework.aop.TargetClassAware</node>
     <node x="439.0" y="309.0">org.springframework.beans.factory.FactoryBean</node>
@@ -61,17 +61,17 @@
       <point x="0.0" y="-26.5" />
       <point x="0.0" y="26.5" />
     </edge>
-    <edge source="org.springframework.beans.factory.BeanClassLoaderAware" target="org.springframework.beans.factory.Aware">
-      <point x="0.0" y="-26.5" />
-      <point x="311.0" y="284.0" />
-      <point x="201.2019230769231" y="284.0" />
-      <point x="22.5" y="26.5" />
-    </edge>
     <edge source="org.springframework.aop.framework.ProxyFactoryBean" target="org.springframework.beans.factory.BeanFactoryAware">
       <point x="-68.625" y="-26.5" />
       <point x="312.39423076923083" y="392.0" />
       <point x="91.5" y="392.0" />
       <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.BeanClassLoaderAware" target="org.springframework.beans.factory.Aware">
+      <point x="0.0" y="-26.5" />
+      <point x="311.0" y="284.0" />
+      <point x="201.2019230769231" y="284.0" />
+      <point x="22.5" y="26.5" />
     </edge>
     <edge source="org.springframework.aop.framework.ProxyFactoryBean" target="org.springframework.beans.factory.BeanClassLoaderAware">
       <point x="-22.875" y="-26.5" />
@@ -92,7 +92,7 @@
       <point x="0.0" y="26.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.8288659793814434" x="488.5" y="232.49999999999997" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="488.5" y="232.5" />
   <SelectedNodes>
     <node>org.springframework.aop.aspectj.annotation.AspectJProxyFactory</node>
   </SelectedNodes>

@@ -1,0 +1,62 @@
+Classfile /Users/xutong/IdeaProjects/study/vm/src/main/java/TestFinger.class
+  Last modified 2020年10月19日; size 274 bytes
+  MD5 checksum 531d7901081a56fdfbd8d8d4aa7ea4a8
+  Compiled from "TestFinger.java"
+public class TestFinger
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #2                          // TestFinger
+  super_class: #3                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #3.#12         // java/lang/Object."<init>":()V
+   #2 = Class              #13            // TestFinger
+   #3 = Class              #14            // java/lang/Object
+   #4 = Utf8               <init>
+   #5 = Utf8               ()V
+   #6 = Utf8               Code
+   #7 = Utf8               LineNumberTable
+   #8 = Utf8               calc
+   #9 = Utf8               ()I
+  #10 = Utf8               SourceFile
+  #11 = Utf8               TestFinger.java
+  #12 = NameAndType        #4:#5          // "<init>":()V
+  #13 = Utf8               TestFinger
+  #14 = Utf8               java/lang/Object
+{
+  public TestFinger();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 14: 0
+
+  public int calc();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=4, args_size=1
+         0: bipush        100
+         2: istore_1
+         3: sipush        200
+         6: istore_2
+         7: sipush        300
+        10: istore_3
+        11: iload_1
+        12: iload_2
+        13: iadd
+        14: iload_3
+        15: imul
+        16: ireturn
+      LineNumberTable:
+        line 16: 0
+        line 17: 3
+        line 18: 7
+        line 19: 11
+}
+SourceFile: "TestFinger.java"

@@ -23,7 +23,7 @@
 <!--    <aop:config>-->
 
 <!--        <aop:pointcut id="businessService"-->
-<!--                      expression="execution(* com.example.study.async.service.impl.AspectServiceImpl.*(..))"/>-->
+<!--                      expression="execution(* com.example.study.mvc.service.impl.AspectServiceImpl.*(..))"/>-->
 
 <!--        <aop:advisor-->
 <!--                pointcut-ref="businessService"-->
@@ -38,7 +38,7 @@
 <!--    </tx:advice>-->
 
     <bean id="concurrentOperationExecutor"
-          class="com.example.study.async.excutor.ConcurrentOperationExecutor">
+          class="com.example.study.async.executor.ConcurrentOperationExecutor">
         <property name="maxRetries" value="3"/>
         <property name="order" value="100"/>
     </bean>

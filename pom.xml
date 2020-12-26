@@ -22,6 +22,7 @@
         <module>mvc</module>
         <module>vm</module>
         <module>mybatis</module>
+        <module>netty</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>

@@ -1,16 +1,18 @@
 package com.example.study.async;
 
+import java.util.Iterator;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.ApplicationRunner;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationEventPublisher;
-import org.springframework.context.annotation.Bean;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.scheduling.annotation.EnableAsync;
 
 import com.example.study.async.service.AspectService;
+
+import oracle.jvm.hotspot.jfr.ThreadStates;
 
 @EnableAsync
 @SpringBootApplication
@@ -28,7 +30,12 @@ public class AsyncTestApplication {
   @Autowired private AspectService aspectService;
 
   public static void main(String[] args) {
-    SpringApplication.run(AsyncTestApplication.class, args);
+      ConfigurableApplicationContext run = SpringApplication.run(AsyncTestApplication.class, args);
+      Iterator<String> beanNamesIterator = run.getBeanFactory().getBeanNamesIterator();
+    while (beanNamesIterator.hasNext()) {
+      //
+      System.out.println(beanNamesIterator.next());
+    }
   }
 
 //  @Bean

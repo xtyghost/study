@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.transaction.support.SimpleTransactionStatus</OriginalElement>
+  <nodes>
+    <node x="270.0" y="410.0">org.springframework.transaction.support.SimpleTransactionStatus</node>
+    <node x="119.14285714285717" y="206.0">org.springframework.transaction.support.AbstractTransactionStatus</node>
+    <node x="152.64285714285717" y="103.0">org.springframework.transaction.TransactionStatus</node>
+    <node x="359.64285714285717" y="0.0">org.springframework.transaction.TransactionExecution</node>
+    <node x="156.64285714285717" y="0.0">org.springframework.transaction.SavepointManager</node>
+    <node x="0.0" y="355.0">org.springframework.transaction.support.DefaultTransactionStatus</node>
+    <node x="12.642857142857167" y="0.0">java.io.Flushable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.transaction.support.SimpleTransactionStatus" target="org.springframework.transaction.support.AbstractTransactionStatus">
+      <point x="0.0" y="-27.5" />
+      <point x="391.0" y="330.0" />
+      <point x="312.64285714285717" y="330.0" />
+      <point x="64.5" y="49.5" />
+    </edge>
+    <edge source="org.springframework.transaction.TransactionStatus" target="org.springframework.transaction.TransactionExecution">
+      <point x="63.666666666666686" y="-26.5" />
+      <point x="311.80952380952385" y="78.0" />
+      <point x="467.64285714285717" y="78.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.transaction.TransactionStatus" target="org.springframework.transaction.SavepointManager">
+      <point x="0.0" y="-26.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.transaction.support.DefaultTransactionStatus" target="org.springframework.transaction.support.AbstractTransactionStatus">
+      <point x="0.0" y="-82.5" />
+      <point x="125.0" y="330.0" />
+      <point x="183.64285714285717" y="330.0" />
+      <point x="-64.5" y="49.5" />
+    </edge>
+    <edge source="org.springframework.transaction.TransactionStatus" target="java.io.Flushable">
+      <point x="-63.66666666666663" y="-26.5" />
+      <point x="184.47619047619054" y="78.0" />
+      <point x="74.64285714285717" y="78.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.transaction.support.AbstractTransactionStatus" target="org.springframework.transaction.TransactionStatus">
+      <point x="0.0" y="-49.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="288.0" y="260.0" />
+  <SelectedNodes>
+    <node>org.springframework.transaction.TransactionStatus</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

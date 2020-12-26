@@ -1,0 +1,93 @@
+Classfile /Users/xutong/IdeaProjects/study/vm/src/main/java/ExceptionAndFinally.class
+  Last modified 2020-9-23; size 443 bytes
+  MD5 checksum 27b722bfa29c2662ec6ded08d94a757c
+  Compiled from "ExceptionAndFinally.java"
+public class ExceptionAndFinally
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #4.#16         // java/lang/Object."<init>":()V
+   #2 = Class              #17            // java/lang/Exception
+   #3 = Class              #18            // ExceptionAndFinally
+   #4 = Class              #19            // java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Utf8               Code
+   #8 = Utf8               LineNumberTable
+   #9 = Utf8               inc
+  #10 = Utf8               ()I
+  #11 = Utf8               StackMapTable
+  #12 = Class              #17            // java/lang/Exception
+  #13 = Class              #20            // java/lang/Throwable
+  #14 = Utf8               SourceFile
+  #15 = Utf8               ExceptionAndFinally.java
+  #16 = NameAndType        #5:#6          // "<init>":()V
+  #17 = Utf8               java/lang/Exception
+  #18 = Utf8               ExceptionAndFinally
+  #19 = Utf8               java/lang/Object
+  #20 = Utf8               java/lang/Throwable
+{
+  public ExceptionAndFinally();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 14: 0
+
+  public int inc();
+    descriptor: ()I
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=5, args_size=1
+         0: iconst_1
+         1: istore_1
+         2: iload_1
+         3: istore_2
+         4: iconst_3
+         5: istore_1
+         6: iload_2
+         7: ireturn
+         8: astore_2
+         9: iconst_2
+        10: istore_1
+        11: iload_1
+        12: istore_3
+        13: iconst_3
+        14: istore_1
+        15: iload_3
+        16: ireturn
+        17: astore        4
+        19: iconst_3
+        20: istore_1
+        21: aload         4
+        23: athrow
+      Exception table:
+         from    to  target type
+             0     4     8   Class java/lang/Exception
+             0     4    17   any
+             8    13    17   any
+            17    19    17   any
+      LineNumberTable:
+        line 18: 0
+        line 19: 2
+        line 24: 4
+        line 19: 6
+        line 20: 8
+        line 21: 9
+        line 22: 11
+        line 24: 13
+        line 22: 15
+        line 24: 17
+        line 25: 21
+      StackMapTable: number_of_entries = 2
+        frame_type = 72 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Exception ]
+        frame_type = 72 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Throwable ]
+}
+SourceFile: "ExceptionAndFinally.java"

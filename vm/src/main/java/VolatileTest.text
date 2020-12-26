@@ -1,0 +1,193 @@
+Classfile /Users/xutong/IdeaProjects/study/vm/src/main/java/VolatileTest.class
+  Last modified 2020年10月26日; size 1459 bytes
+  MD5 checksum 9bbfc08d289557400a80b1831fbc4b4a
+  Compiled from "VolatileTest.java"
+public class VolatileTest
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #3                          // VolatileTest
+  super_class: #13                        // java/lang/Object
+  interfaces: 0, fields: 2, methods: 5, attributes: 3
+Constant pool:
+   #1 = Methodref          #13.#32        // java/lang/Object."<init>":()V
+   #2 = Fieldref           #3.#33         // VolatileTest.race:I
+   #3 = Class              #34            // VolatileTest
+   #4 = Class              #35            // java/lang/Thread
+   #5 = InvokeDynamic      #0:#40         // #0:run:()Ljava/lang/Runnable;
+   #6 = Methodref          #4.#41         // java/lang/Thread."<init>":(Ljava/lang/Runnable;)V
+   #7 = Methodref          #4.#42         // java/lang/Thread.start:()V
+   #8 = Methodref          #4.#43         // java/lang/Thread.activeCount:()I
+   #9 = Methodref          #4.#44         // java/lang/Thread.yield:()V
+  #10 = Fieldref           #45.#46        // java/lang/System.out:Ljava/io/PrintStream;
+  #11 = Methodref          #47.#48        // java/io/PrintStream.println:(I)V
+  #12 = Methodref          #3.#49         // VolatileTest.increase:()V
+  #13 = Class              #50            // java/lang/Object
+  #14 = Utf8               THREADS_COUNT
+  #15 = Utf8               I
+  #16 = Utf8               ConstantValue
+  #17 = Integer            20
+  #18 = Utf8               race
+  #19 = Utf8               <init>
+  #20 = Utf8               ()V
+  #21 = Utf8               Code
+  #22 = Utf8               LineNumberTable
+  #23 = Utf8               increase
+  #24 = Utf8               main
+  #25 = Utf8               ([Ljava/lang/String;)V
+  #26 = Utf8               StackMapTable
+  #27 = Class              #51            // "[Ljava/lang/Thread;"
+  #28 = Utf8               lambda$main$0
+  #29 = Utf8               <clinit>
+  #30 = Utf8               SourceFile
+  #31 = Utf8               VolatileTest.java
+  #32 = NameAndType        #19:#20        // "<init>":()V
+  #33 = NameAndType        #18:#15        // race:I
+  #34 = Utf8               VolatileTest
+  #35 = Utf8               java/lang/Thread
+  #36 = Utf8               BootstrapMethods
+  #37 = MethodHandle       6:#52          // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #38 = MethodType         #20            //  ()V
+  #39 = MethodHandle       6:#53          // REF_invokeStatic VolatileTest.lambda$main$0:()V
+  #40 = NameAndType        #54:#55        // run:()Ljava/lang/Runnable;
+  #41 = NameAndType        #19:#56        // "<init>":(Ljava/lang/Runnable;)V
+  #42 = NameAndType        #57:#20        // start:()V
+  #43 = NameAndType        #58:#59        // activeCount:()I
+  #44 = NameAndType        #60:#20        // yield:()V
+  #45 = Class              #61            // java/lang/System
+  #46 = NameAndType        #62:#63        // out:Ljava/io/PrintStream;
+  #47 = Class              #64            // java/io/PrintStream
+  #48 = NameAndType        #65:#66        // println:(I)V
+  #49 = NameAndType        #23:#20        // increase:()V
+  #50 = Utf8               java/lang/Object
+  #51 = Utf8               [Ljava/lang/Thread;
+  #52 = Methodref          #67.#68        // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #53 = Methodref          #3.#69         // VolatileTest.lambda$main$0:()V
+  #54 = Utf8               run
+  #55 = Utf8               ()Ljava/lang/Runnable;
+  #56 = Utf8               (Ljava/lang/Runnable;)V
+  #57 = Utf8               start
+  #58 = Utf8               activeCount
+  #59 = Utf8               ()I
+  #60 = Utf8               yield
+  #61 = Utf8               java/lang/System
+  #62 = Utf8               out
+  #63 = Utf8               Ljava/io/PrintStream;
+  #64 = Utf8               java/io/PrintStream
+  #65 = Utf8               println
+  #66 = Utf8               (I)V
+  #67 = Class              #70            // java/lang/invoke/LambdaMetafactory
+  #68 = NameAndType        #71:#75        // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #69 = NameAndType        #28:#20        // lambda$main$0:()V
+  #70 = Utf8               java/lang/invoke/LambdaMetafactory
+  #71 = Utf8               metafactory
+  #72 = Class              #77            // java/lang/invoke/MethodHandles$Lookup
+  #73 = Utf8               Lookup
+  #74 = Utf8               InnerClasses
+  #75 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #76 = Class              #78            // java/lang/invoke/MethodHandles
+  #77 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #78 = Utf8               java/lang/invoke/MethodHandles
+{
+  public static volatile int race;
+    descriptor: I
+    flags: (0x0049) ACC_PUBLIC, ACC_STATIC, ACC_VOLATILE
+
+  public VolatileTest();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 14: 0
+
+  public static void increase();
+    descriptor: ()V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: getstatic     #2                  // Field race:I
+         3: iconst_1
+         4: iadd
+         5: putstatic     #2                  // Field race:I
+         8: return
+      LineNumberTable:
+        line 19: 0
+        line 20: 8
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=5, locals=3, args_size=1
+         0: bipush        20
+         2: anewarray     #4                  // class java/lang/Thread
+         5: astore_1
+         6: iconst_0
+         7: istore_2
+         8: iload_2
+         9: bipush        20
+        11: if_icmpge     41
+        14: aload_1
+        15: iload_2
+        16: new           #4                  // class java/lang/Thread
+        19: dup
+        20: invokedynamic #5,  0              // InvokeDynamic #0:run:()Ljava/lang/Runnable;
+        25: invokespecial #6                  // Method java/lang/Thread."<init>":(Ljava/lang/Runnable;)V
+        28: aastore
+        29: aload_1
+        30: iload_2
+        31: aaload
+        32: invokevirtual #7                  // Method java/lang/Thread.start:()V
+        35: iinc          2, 1
+        38: goto          8
+        41: invokestatic  #8                  // Method java/lang/Thread.activeCount:()I
+        44: iconst_1
+        45: if_icmple     54
+        48: invokestatic  #9                  // Method java/lang/Thread.yield:()V
+        51: goto          41
+        54: getstatic     #10                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        57: getstatic     #2                  // Field race:I
+        60: invokevirtual #11                 // Method java/io/PrintStream.println:(I)V
+        63: return
+      LineNumberTable:
+        line 24: 0
+        line 25: 6
+        line 26: 14
+        line 33: 29
+        line 25: 35
+        line 35: 41
+        line 36: 48
+        line 38: 54
+        line 39: 63
+      StackMapTable: number_of_entries = 3
+        frame_type = 253 /* append */
+          offset_delta = 8
+          locals = [ class "[Ljava/lang/Thread;", int ]
+        frame_type = 250 /* chop */
+          offset_delta = 32
+        frame_type = 12 /* same */
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: iconst_0
+         1: putstatic     #2                  // Field race:I
+         4: return
+      LineNumberTable:
+        line 16: 0
+}
+SourceFile: "VolatileTest.java"
+InnerClasses:
+  public static final #73= #72 of #76;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #37 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #38 ()V
+      #39 REF_invokeStatic VolatileTest.lambda$main$0:()V
+      #38 ()V

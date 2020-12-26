@@ -7,6 +7,11 @@ package com.example.study.study.bean.beanlifecycle;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanClassLoaderAware;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.BeanFactoryAware;
+import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Required;
@@ -22,7 +27,14 @@ import org.springframework.stereotype.Component;
  * @since 1.0.0
  */
 @Component
-public class BeanA implements AutoCloseable, SmartLifecycle, InitializingBean, DisposableBean {
+public class BeanA
+    implements AutoCloseable,
+        SmartLifecycle,
+        InitializingBean,
+        DisposableBean,
+        BeanNameAware,
+        BeanFactoryAware,
+        BeanClassLoaderAware {
 
   private String name;
   private Integer age;
@@ -123,5 +135,20 @@ public class BeanA implements AutoCloseable, SmartLifecycle, InitializingBean, D
   @Override
   public int getPhase() {
     return 0;
+  }
+
+  @Override
+  public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+    System.out.println("setBeanFactory========" + beanFactory);
+  }
+
+  @Override
+  public void setBeanName(String name) {
+    System.out.println("setBeanName=======" + name);
+  }
+
+  @Override
+  public void setBeanClassLoader(ClassLoader classLoader) {
+    System.out.println("setBeanClassLoader=======" + classLoader.toString());
   }
 }

@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Import;
 /**
  * 〈一句话功能简述〉<br>
  * 〈〉
+ * @Import可以直接把类导出成spring的bean
  *
  * @author xutong
  * @create 2020/6/19
