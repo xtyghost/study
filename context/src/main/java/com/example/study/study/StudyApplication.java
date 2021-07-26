@@ -8,8 +8,11 @@ import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.annotation.Bean;
 
 import com.example.study.study.bean.scope.SingletonA;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @SpringBootApplication(scanBasePackages = "com.example.study.study.bean.scope")
+@EnableAspectJAutoProxy
 public class StudyApplication {
 
 //  @Autowired private Map<String, Command> commandMap;

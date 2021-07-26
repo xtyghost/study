@@ -1,7 +1,3 @@
-/**
- * Copyright (C), 2015-2020, XXX有限公司 FileName: Config Author: xutong Date: 2020/6/3 4:36 下午
- * Description: History: <author> <time> <version> <desc> 作者姓名 修改时间 版本号 描述
- */
 package com.example.study.study.bean.methodlookup;
 
 import org.springframework.context.annotation.Bean;

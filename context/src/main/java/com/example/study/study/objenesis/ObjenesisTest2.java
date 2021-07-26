@@ -1,11 +1,7 @@
-/**
- * Copyright (C), 2015-2020, XXX有限公司 FileName: ObjenesisTest Author: xutong Date: 2020/6/23 1:39 下午
- * Description: History: <author> <time> <version> <desc> 作者姓名 修改时间 版本号 描述
- */
 package com.example.study.study.objenesis;
 
-import org.objenesis.ObjenesisSerializer;
-import org.objenesis.instantiator.ObjectInstantiator;
+import org.springframework.objenesis.ObjenesisSerializer;
+import org.springframework.objenesis.instantiator.ObjectInstantiator;
 
 /**
  * 〈一句话功能简述〉<br>

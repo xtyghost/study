@@ -28,7 +28,7 @@ public class Config {
   public TestBeanB prototypeInstanceB() {
     System.out.println("prototypeInstanceB___");
     System.out.println("---------------");
-
+    System.out.println(this);
     // 中间会执行，bean的初始化，从spring中获取B2
     System.out.println(prototypeInstanceB2().getClass());
     return new TestBeanB("prototypeInstanceB for ");

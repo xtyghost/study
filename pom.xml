@@ -23,6 +23,8 @@
         <module>vm</module>
         <module>mybatis</module>
         <module>netty</module>
+        <module>tomcat</module>
+        <module>dubbo</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
@@ -42,7 +44,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <!--            <scope>test</scope>-->
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>commons-dbcp</groupId>

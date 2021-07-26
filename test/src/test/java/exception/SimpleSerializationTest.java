@@ -24,7 +24,7 @@ import org.junit.Test;
 
 /**
  * 〈一句话功能简述〉<br> 
- * 〈〉
+ * 〈外部类将持有内部类对引用〉
  *
  * @author xutong
  * @create 2020/8/25
@@ -57,9 +57,7 @@ public class SimpleSerializationTest {
         in = new ObjectInputStream(bis);
         Object o = in.readObject();
         bis.close();
-        if (in != null) {
-            in.close();
-        }
+        in.close();
 
         assertEquals(hmap, o);
     }

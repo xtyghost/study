@@ -24,8 +24,8 @@ public class CglibMethodInvokeTest {
     enhancer.setCallback(
             (MethodInterceptor) (o, method, objects, methodProxy) -> {
               //            System.out.println(method.getDeclaringClass());
-//                method.invoke(o,objects);
-                methodProxy.invokeSuper(o,objects);
+                method.invoke(o,objects);
+//                methodProxy.invokeSuper(o,objects);
               if (method.getDeclaringClass() != Object.class
                   && method.getReturnType() == String.class) {
                 return "hello cglib";

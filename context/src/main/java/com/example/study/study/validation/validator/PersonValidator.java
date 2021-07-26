@@ -1,7 +1,3 @@
-/**
- * Copyright (C), 2015-2020, XXX有限公司 FileName: PersonValidator Author: xutong Date: 2020/6/16 5:24
- * 下午 Description: 人员解析器 History: <author> <time> <version> <desc> 作者姓名 修改时间 版本号 描述
- */
 package com.example.study.study.validation.validator;
 
 import org.springframework.validation.Errors;

@@ -6,7 +6,9 @@ package base.entity;
 
 import java.util.List;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 〈一句话功能简述〉<br>
@@ -17,9 +19,12 @@ import lombok.Data;
  * @since 1.0.0
  */
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Blog {
-  private Integer id;
-  private String title;
-  private Author author;
-  private List<Post> posts;
+    private Integer id;
+    private String title;
+    private Author author;
+    private List<Post> posts;
+    public static String staticField = "static Field";
 }

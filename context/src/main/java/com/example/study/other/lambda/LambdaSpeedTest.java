@@ -28,7 +28,7 @@ public class LambdaSpeedTest {
       Random random = new Random(System.currentTimeMillis());
       for (int i = 0; i < 100000; i++) {
           int e = random.nextInt(100);
-      System.out.println("e = " + e);
+//      System.out.println("e = " + e);
 //          UUID.fastUUID();
           list.add(e);
     }

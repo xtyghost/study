@@ -4,9 +4,9 @@
  */
 package com.example.study.study.resource.pathmatcher;
 
+import org.junit.Assert;
 import org.springframework.util.PatternMatchUtils;
 import org.springframework.util.SimpleIdGenerator;
-import org.testng.Assert;
 
 /**
  * 〈一句话功能简述〉<br>

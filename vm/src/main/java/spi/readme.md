@@ -1,0 +1,1 @@
+spi全称service provider interface，是一种服务发现机制， 它通过classPath路径下的META-INF/services文体夹查找文件，自动加载文件里所定义的类

@@ -10,7 +10,6 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.example.study</groupId>
     <artifactId>netty</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <dependencies>

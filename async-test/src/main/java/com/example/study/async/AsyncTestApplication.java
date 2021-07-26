@@ -1,7 +1,6 @@
 package com.example.study.async;
 
-import java.util.Iterator;
-
+import com.example.study.async.service.AspectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,9 +9,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.scheduling.annotation.EnableAsync;
 
-import com.example.study.async.service.AspectService;
-
-import oracle.jvm.hotspot.jfr.ThreadStates;
+import java.util.Iterator;
 
 @EnableAsync
 @SpringBootApplication

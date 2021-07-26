@@ -1,4 +1,4 @@
-package com.example.study.study.aspect;
+package com.example.study.async;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

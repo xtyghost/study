@@ -4,12 +4,11 @@
  */
 package com.example.study.study.bean.beandefinition;
 
+import com.example.study.study.bean.beandefinition.dao.PersonRepository;
 import org.junit.Assert;
 import org.springframework.beans.factory.groovy.GroovyBeanDefinitionReader;
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
 import org.springframework.context.support.GenericApplicationContext;
-
-import com.example.study.study.bean.beandefinition.dao.PersonRepository;
 
 /**
  * 〈一句话功能简述〉<br>

@@ -14,6 +14,7 @@ package com.example.study.study.bean.cglib;
  */
 public class SampleClass {
   public String test(String input) {
+    System.out.println("dfsdf");
     return "do nothing";
   }
 

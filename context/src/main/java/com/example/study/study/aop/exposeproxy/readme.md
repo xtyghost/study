@@ -1,0 +1,4 @@
+expose-proxy属性为true
+可以把代理类暴露出来，方便在当前代理对象中使用
+用法：AopContext.currentProxy()
+源码解析AopNamespaceUtils
