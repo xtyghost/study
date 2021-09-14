@@ -25,15 +25,22 @@
         <module>netty</module>
         <module>tomcat</module>
         <module>dubbo</module>
+        <module>concurrency</module>
     </modules>
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>1.7</java.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>logback-classic</artifactId>
+                    <groupId>ch.qos.logback</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>

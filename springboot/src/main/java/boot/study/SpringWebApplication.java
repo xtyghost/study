@@ -35,7 +35,7 @@ public class SpringWebApplication {
      *
      * @return
      */
-    @Bean
+//    @Bean
     public CommandLineRunner commandLineRunner() throws InterruptedException {
         rateLimitClient.initToken("1");
         TimeUnit.SECONDS.sleep(1);

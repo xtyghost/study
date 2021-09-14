@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>com.example.study</groupId>
-    <artifactId>dubbo</artifactId>
+    <artifactId>concurrency</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <dependencies>
         <dependency>
@@ -41,11 +41,6 @@
             <artifactId>curator-recipes</artifactId>
             <version>5.1.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo</artifactId>
-            <version>2.7.3</version>
-        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -62,5 +57,5 @@
             </plugin>
         </plugins>
     </build>
-    
+
 </project>

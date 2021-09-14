@@ -35,7 +35,6 @@ public class Boot {
     }
       BasicDataSource bean = context.getBean(BasicDataSource.class);
     System.out.println(bean.getPassword());
-    new ReentrantLock().lock();
 
   }
 }

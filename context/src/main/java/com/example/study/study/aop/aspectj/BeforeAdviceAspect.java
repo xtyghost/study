@@ -26,4 +26,6 @@ public class BeforeAdviceAspect {
   public void before() {
     System.out.println("before");
   }
+
+  public void doNothing(){};
 }
