@@ -19,6 +19,7 @@ public class Boot {
     AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
     //      new DefaultAdvisorAutoProxyCreator();
     ctx.register(Config.class);
+
     ctx.refresh();
     BusinessObject bean = (BusinessObject) ctx.getBean("businessObject1");
     bean.say();

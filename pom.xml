@@ -25,10 +25,10 @@
         <module>netty</module>
         <module>tomcat</module>
         <module>dubbo</module>
-        <module>concurrency</module>
+        <module>concurrent</module>
     </modules>
     <properties>
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
     </properties>
 
     <dependencies>

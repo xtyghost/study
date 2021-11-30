@@ -32,6 +32,7 @@ public class Boot {
 //      bean.setTargetName("com.example.study.study.aop.pointcut.Work");
       bean.setTarget(new Work());
 //      bean.setInterceptorNames();
+//      bean.setAdvisorAdapterRegistry();
       Work work= (Work) bean.getObject();
       work.someMethodName();
 

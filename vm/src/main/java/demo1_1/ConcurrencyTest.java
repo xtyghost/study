@@ -1,4 +1,4 @@
-package concurrency.demo.demo1_1;
+package demo1_1;
 
 /**
  * @author xutong
